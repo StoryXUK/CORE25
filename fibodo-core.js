@@ -86,8 +86,8 @@ function runHeroTitleGlitch() {
 
     window.setTimeout(() => {
       glitchToText("This is CORE");
-    }, 2000);
-  }, 3000);
+    }, 1800);
+  }, 1900);
 }
 
 function renderFeatureCards() {
