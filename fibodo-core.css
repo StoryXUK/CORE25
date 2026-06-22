@@ -108,7 +108,7 @@ svg { display: block; }
   position: relative;
   max-width: 980px;
   margin: 32px 0 0;
-  font-size: clamp(66px, 8vw, 112px);
+  font-size: clamp(99px, 12vw, 168px);
   line-height: .92;
   letter-spacing: -0.06em;
   font-weight: 950;
@@ -580,7 +580,7 @@ svg { display: block; }
   .hero-shape-arrow,
   .hero-shape-circle,
   .hero-dots { display: none; }
-  .hero h1 { font-size: 54px; }
+  .hero h1 { font-size: 81px; }
   .sector-grid,
   .business-groups,
   .business-list,
