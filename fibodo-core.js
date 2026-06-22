@@ -67,21 +67,27 @@ function runHeroTitleGlitch() {
   const title = document.getElementById("heroTitle");
   if (!title) return;
 
-  const finalText = "Only £25 a month.";
-
-  window.setTimeout(() => {
+  const glitchToText = (text) => {
     title.dataset.text = title.textContent;
     title.classList.add("is-glitching");
 
     window.setTimeout(() => {
-      title.textContent = finalText;
-      title.dataset.text = finalText;
+      title.textContent = text;
+      title.dataset.text = text;
     }, 260);
 
     window.setTimeout(() => {
       title.classList.remove("is-glitching");
     }, 760);
-  }, 1500);
+  };
+
+  window.setTimeout(() => {
+    glitchToText("Run your business for £25 a month.");
+
+    window.setTimeout(() => {
+      glitchToText("We’re meant to be");
+    }, 2000);
+  }, 3000);
 }
 
 function renderFeatureCards() {
