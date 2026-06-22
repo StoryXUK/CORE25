@@ -82,7 +82,7 @@ function runHeroTitleGlitch() {
   };
 
   window.setTimeout(() => {
-    glitchToText("For only £25 a month.");
+    glitchToText("For Only £25 a month.");
 
     window.setTimeout(() => {
       glitchToText("You've Found The One");
