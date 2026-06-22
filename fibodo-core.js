@@ -67,7 +67,7 @@ function runHeroTitleGlitch() {
   const title = document.getElementById("heroTitle");
   if (!title) return;
 
-  const finalText = "Run your business for £25 a month.";
+  const finalText = "Only £25 a month.";
 
   window.setTimeout(() => {
     title.dataset.text = title.textContent;
