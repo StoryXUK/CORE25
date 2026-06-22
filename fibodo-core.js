@@ -63,24 +63,12 @@ const features = [
 
 const slugify = text => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
-function runHeroTitleGlitch() {
-  const title = document.getElementById("heroTitle");
+function updateHeroTitle() {
+  const title = document.querySelector(".hero h1");
   if (!title) return;
 
-  const finalText = "Run your business for £25 a month.";
-
   window.setTimeout(() => {
-    title.dataset.text = title.textContent;
-    title.classList.add("is-glitching");
-
-    window.setTimeout(() => {
-      title.textContent = finalText;
-      title.dataset.text = finalText;
-    }, 260);
-
-    window.setTimeout(() => {
-      title.classList.remove("is-glitching");
-    }, 760);
+    title.textContent = "Run your business for £25 a month.";
   }, 3000);
 }
 
@@ -159,7 +147,7 @@ function bindBusinessButtons() {
 }
 
 function initPage() {
-  runHeroTitleGlitch();
+  updateHeroTitle();
   renderFeatureCards();
   renderSectorCards();
   renderBusinessGroups();
