@@ -63,6 +63,26 @@ const features = [
 
 const slugify = text => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
+function runHeroTitleGlitch() {
+  const title = document.getElementById("heroTitle");
+  if (!title) return;
+
+  const finalText = "Run your business for £25 a month.";
+
+  window.setTimeout(() => {
+    title.classList.add("is-glitching");
+
+    window.setTimeout(() => {
+      title.textContent = finalText;
+      title.dataset.text = finalText;
+    }, 260);
+
+    window.setTimeout(() => {
+      title.classList.remove("is-glitching");
+    }, 760);
+  }, 3000);
+}
+
 function renderFeatureCards() {
   document.getElementById("featureCards").innerHTML = features.map(feature => `
     <article class="feature-card">
@@ -124,6 +144,7 @@ function bindBusinessButtons() {
   if (initial) updateSelected("Personal trainers", initial.dataset.accent);
 }
 
+runHeroTitleGlitch();
 renderFeatureCards();
 renderSectorCards();
 renderBusinessGroups();

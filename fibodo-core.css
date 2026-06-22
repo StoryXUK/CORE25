@@ -105,12 +105,68 @@ svg { display: block; }
   text-transform: uppercase;
 }
 .hero h1 {
+  position: relative;
   max-width: 980px;
   margin: 32px 0 0;
   font-size: clamp(56px, 8vw, 112px);
   line-height: .92;
   letter-spacing: -0.06em;
   font-weight: 950;
+}
+.glitch-title::before,
+.glitch-title::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+.glitch-title::before {
+  color: var(--aqua);
+  transform: translate(0);
+}
+.glitch-title::after {
+  color: var(--orange);
+  transform: translate(0);
+}
+.glitch-title.is-glitching {
+  animation: glitch-main .72s steps(1, end);
+}
+.glitch-title.is-glitching::before {
+  opacity: .85;
+  animation: glitch-before .72s steps(1, end);
+}
+.glitch-title.is-glitching::after {
+  opacity: .8;
+  animation: glitch-after .72s steps(1, end);
+}
+@keyframes glitch-main {
+  0% { transform: translate(0); filter: none; }
+  12% { transform: translate(-3px, 2px); filter: contrast(1.6); }
+  22% { transform: translate(4px, -1px); }
+  34% { transform: translate(-2px, -2px); filter: hue-rotate(25deg); }
+  48% { transform: translate(3px, 1px); }
+  62% { transform: translate(-1px, 2px); filter: contrast(1.35); }
+  78% { transform: translate(2px, -1px); }
+  100% { transform: translate(0); filter: none; }
+}
+@keyframes glitch-before {
+  0% { clip-path: inset(0 0 84% 0); transform: translate(-6px, -2px); }
+  14% { clip-path: inset(22% 0 55% 0); transform: translate(7px, 2px); }
+  28% { clip-path: inset(60% 0 22% 0); transform: translate(-5px, 1px); }
+  44% { clip-path: inset(8% 0 72% 0); transform: translate(5px, -2px); }
+  66% { clip-path: inset(38% 0 38% 0); transform: translate(-8px, 2px); }
+  84% { clip-path: inset(72% 0 8% 0); transform: translate(4px, -1px); }
+  100% { clip-path: inset(0 0 100% 0); transform: translate(0); opacity: 0; }
+}
+@keyframes glitch-after {
+  0% { clip-path: inset(76% 0 6% 0); transform: translate(6px, 2px); }
+  16% { clip-path: inset(12% 0 70% 0); transform: translate(-7px, -1px); }
+  32% { clip-path: inset(46% 0 36% 0); transform: translate(6px, 1px); }
+  50% { clip-path: inset(68% 0 14% 0); transform: translate(-4px, 2px); }
+  70% { clip-path: inset(26% 0 58% 0); transform: translate(8px, -2px); }
+  88% { clip-path: inset(5% 0 80% 0); transform: translate(-3px, 1px); }
+  100% { clip-path: inset(0 0 100% 0); transform: translate(0); opacity: 0; }
 }
 .hero p {
   max-width: 760px;
