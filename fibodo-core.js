@@ -85,7 +85,7 @@ function runHeroTitleGlitch() {
     glitchToText("For Only £25 a month.");
 
     window.setTimeout(() => {
-      glitchToText("You've Found The One");
+      glitchToText("Welcome to Core by fibodo");
     }, 2000);
   }, 3000);
 }
