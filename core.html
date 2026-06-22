@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>fibodo — Sectors</title>
+  <meta name="description" content="fibodo sector landing page for businesses that sell time, space, services and experiences." />
+  <link rel="stylesheet" href="fibodo-sectors.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="fibodo home">fibodo</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#products">Products</a>
+        <a href="#sectors">Sectors</a>
+        <a href="#why">Why fibodo?</a>
+        <a href="#partners">Partners</a>
+      </nav>
+      <button class="header-cta" type="button">Talk to us</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-shape hero-shape-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" /></svg>
+      </div>
+      <div class="hero-shape hero-shape-circle" aria-hidden="true">◎</div>
+      <div class="hero-dots" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <span class="badge">Sectors</span>
+        <h1>Built for businesses that sell time, space, services and experiences</h1>
+        <p>fibodo helps people and organisations manage bookings, payments, customers, staff, content and growth across physical, digital and hybrid businesses.</p>
+        <div class="hero-actions">
+          <a class="btn btn-orange" href="#sectors">Find your sector</a>
+          <a class="btn btn-outline" href="#business-types">Find yourself here</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectors" class="section container">
+      <div class="section-heading split-heading">
+        <div>
+          <span class="badge">Choose your sector</span>
+          <h2>Start with the sector. Then see the product.</h2>
+        </div>
+        <p>The top cards are broad routes. They scroll to visible business types below — no dropdown maze, no hidden journey.</p>
+      </div>
+      <div id="sectorCards" class="sector-grid"></div>
+    </section>
+
+    <section id="business-types" class="business-section">
+      <div class="container">
+        <div class="section-heading business-heading">
+          <span class="badge">Sector recognition</span>
+          <h2>Find yourself here.</h2>
+          <p>Business types stay visible by default for recognition, SEO and accessibility. Hover or tap to see the recommended product and benefit.</p>
+        </div>
+
+        <div class="business-layout">
+          <div id="businessGroups" class="business-groups"></div>
+
+          <aside class="selected-panel" aria-live="polite">
+            <div class="selected-meta">
+              <span>Selected type</span>
+              <i id="selectedAccent"></i>
+            </div>
+            <h3 id="selectedTitle">Personal trainers</h3>
+            <p id="selectedText">Sell sessions, take payments, manage clients and grow repeat income from one place.</p>
+            <div id="productBadge" class="product-badge product-core">CORE by fibodo</div>
+            <button class="panel-cta" type="button">Explore product fit</button>
+            <p class="panel-help">Desktop: hover reveals this panel. Mobile: tap opens the same content.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section container">
+      <div class="why-layout">
+        <div>
+          <span class="badge">Same platform</span>
+          <h2>Different sectors. Same connected system.</h2>
+          <p>Whether you run a gym, teach Pilates, manage a spa, deliver a training course or operate a public-sector programme, the building blocks are similar. fibodo configures around how your sector actually works.</p>
+        </div>
+        <div id="platformBlocks" class="platform-grid"></div>
+      </div>
+    </section>
+
+    <section id="products" class="products-section">
+      <div class="container">
+        <span class="badge">Product bridge</span>
+        <h2>Choose the product that fits how you work.</h2>
+        <div id="productCards" class="product-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="partners" class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">fibodo</div>
+      <div class="footer-links">
+        <span>Products</span>
+        <span>Sectors</span>
+        <span>Why fibodo?</span>
+        <span>Partners</span>
+        <span>Trust Centre</span>
+        <span>Company</span>
+        <span>Legal</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="fibodo-sectors.js"></script>
+</body>
+</html>
