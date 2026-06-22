@@ -89,6 +89,7 @@ svg { display: block; }
 .hero {
   position: relative;
   overflow: hidden;
+  min-height: 1080px;
   background: var(--dark);
   color: white;
 }
