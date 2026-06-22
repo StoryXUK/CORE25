@@ -108,7 +108,7 @@ svg { display: block; }
   position: relative;
   max-width: 980px;
   margin: 32px 0 0;
-  font-size: clamp(99px, 12vw, 168px);
+  font-size: clamp(88px, 12vw, 168px);
   line-height: .92;
   letter-spacing: -0.06em;
   font-weight: 950;
