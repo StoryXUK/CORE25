@@ -81,7 +81,7 @@ function runHeroTitleGlitch() {
     window.setTimeout(() => {
       title.classList.remove("is-glitching");
     }, 760);
-  }, 3000);
+  }, 1500);
 }
 
 function renderFeatureCards() {
