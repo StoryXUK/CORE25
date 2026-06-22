@@ -70,6 +70,7 @@ function runHeroTitleGlitch() {
   const finalText = "Run your business for £25 a month.";
 
   window.setTimeout(() => {
+    title.dataset.text = title.textContent;
     title.classList.add("is-glitching");
 
     window.setTimeout(() => {
@@ -84,7 +85,10 @@ function runHeroTitleGlitch() {
 }
 
 function renderFeatureCards() {
-  document.getElementById("featureCards").innerHTML = features.map(feature => `
+  const featureCards = document.getElementById("featureCards");
+  if (!featureCards) return;
+
+  featureCards.innerHTML = features.map(feature => `
     <article class="feature-card">
       ${icons[feature.icon]}
       <h3>${feature.title}</h3>
@@ -94,7 +98,10 @@ function renderFeatureCards() {
 }
 
 function renderSectorCards() {
-  document.getElementById("sectorCards").innerHTML = sectors.map(sector => `
+  const sectorCards = document.getElementById("sectorCards");
+  if (!sectorCards) return;
+
+  sectorCards.innerHTML = sectors.map(sector => `
     <a class="sector-card" href="#${slugify(sector.title)}" style="--accent:${sector.accent}">
       <div class="card-top">
         <div class="icon-box">${icons[sector.icon]}</div>
@@ -108,7 +115,10 @@ function renderSectorCards() {
 }
 
 function renderBusinessGroups() {
-  document.getElementById("businessGroups").innerHTML = sectors.map(sector => `
+  const businessGroups = document.getElementById("businessGroups");
+  if (!businessGroups) return;
+
+  businessGroups.innerHTML = sectors.map(sector => `
     <section class="business-group" id="${slugify(sector.title)}" style="--accent:${sector.accent}">
       <h3 class="business-title"><i></i>${sector.title}</h3>
       <div class="business-list">
@@ -123,9 +133,13 @@ function renderBusinessGroups() {
 }
 
 function updateSelected(item, accent) {
-  document.getElementById("selectedTitle").textContent = item;
-  document.getElementById("selectedText").textContent = businessDetails[item] || "Use CORE to create a professional booking, payment and customer journey tailored to this type of business.";
-  document.getElementById("selectedAccent").style.background = accent || ACCENTS.orange;
+  const selectedTitle = document.getElementById("selectedTitle");
+  const selectedText = document.getElementById("selectedText");
+  const selectedAccent = document.getElementById("selectedAccent");
+
+  if (selectedTitle) selectedTitle.textContent = item;
+  if (selectedText) selectedText.textContent = businessDetails[item] || "Use CORE to create a professional booking, payment and customer journey tailored to this type of business.";
+  if (selectedAccent) selectedAccent.style.background = accent || ACCENTS.orange;
 
   document.querySelectorAll(".business-button").forEach(button => {
     button.classList.toggle("is-active", button.dataset.item === item);
@@ -144,8 +158,16 @@ function bindBusinessButtons() {
   if (initial) updateSelected("Personal trainers", initial.dataset.accent);
 }
 
-runHeroTitleGlitch();
-renderFeatureCards();
-renderSectorCards();
-renderBusinessGroups();
-bindBusinessButtons();
+function initPage() {
+  runHeroTitleGlitch();
+  renderFeatureCards();
+  renderSectorCards();
+  renderBusinessGroups();
+  bindBusinessButtons();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initPage);
+} else {
+  initPage();
+}

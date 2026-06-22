@@ -108,35 +108,35 @@ svg { display: block; }
   position: relative;
   max-width: 980px;
   margin: 32px 0 0;
-  font-size: clamp(56px, 8vw, 112px);
+  font-size: clamp(66px, 8vw, 112px);
   line-height: .92;
   letter-spacing: -0.06em;
   font-weight: 950;
 }
-.glitch-title::before,
-.glitch-title::after {
+#heroTitle::before,
+#heroTitle::after {
   content: attr(data-text);
   position: absolute;
   inset: 0;
   pointer-events: none;
   opacity: 0;
 }
-.glitch-title::before {
+#heroTitle::before {
   color: var(--aqua);
   transform: translate(0);
 }
-.glitch-title::after {
+#heroTitle::after {
   color: var(--orange);
   transform: translate(0);
 }
-.glitch-title.is-glitching {
+#heroTitle.is-glitching {
   animation: glitch-main .72s steps(1, end);
 }
-.glitch-title.is-glitching::before {
+#heroTitle.is-glitching::before {
   opacity: .85;
   animation: glitch-before .72s steps(1, end);
 }
-.glitch-title.is-glitching::after {
+#heroTitle.is-glitching::after {
   opacity: .8;
   animation: glitch-after .72s steps(1, end);
 }
