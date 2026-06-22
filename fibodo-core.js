@@ -82,10 +82,10 @@ function runHeroTitleGlitch() {
   };
 
   window.setTimeout(() => {
-    glitchToText("Run your business for £25 a month.");
+    glitchToText("For only £25 a month.");
 
     window.setTimeout(() => {
-      glitchToText("We’re meant to be");
+      glitchToText("You've Found The One");
     }, 2000);
   }, 3000);
 }
