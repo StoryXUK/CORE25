@@ -65,15 +65,37 @@ const slugify = text => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/
 
 function runHeroTitleGlitch() {
   const title = document.getElementById("heroTitle");
+  const audience = document.getElementById("heroAudience");
   if (!title) return;
 
-  const audienceWords = ["Trainer", "Instructor", "Coach"];
+  const audienceWords = ["Instructor", "Coach"];
   let audienceIndex = 0;
 
-  const glitchToAudience = () => {
-    audienceIndex = (audienceIndex + 1) % audienceWords.length;
-    const text = `Made For The ${audienceWords[audienceIndex]}.`;
+  const glitchElementToText = (element, text) => {
+    element.dataset.text = element.textContent;
+    element.classList.add("is-glitching");
 
+    window.setTimeout(() => {
+      element.textContent = text;
+      element.dataset.text = text;
+    }, 260);
+
+    window.setTimeout(() => {
+      element.classList.remove("is-glitching");
+    }, 600);
+  };
+
+  title.dataset.text = title.textContent;
+  if (audience) audience.dataset.text = audience.textContent;
+
+  const rotateAudience = () => {
+    if (!audience || audienceIndex >= audienceWords.length) return;
+
+    glitchElementToText(audience, audienceWords[audienceIndex]);
+    audienceIndex += 1;
+  };
+
+  const glitchTitleToText = (text) => {
     title.dataset.text = title.textContent;
     title.classList.add("is-glitching");
 
@@ -87,8 +109,16 @@ function runHeroTitleGlitch() {
     }, 600);
   };
 
-  title.dataset.text = title.textContent;
-  window.setInterval(glitchToAudience, 700);
+  window.setTimeout(rotateAudience, 700);
+  window.setTimeout(rotateAudience, 1400);
+
+  window.setTimeout(() => {
+    glitchTitleToText("For Only £25 a month.");
+
+    window.setTimeout(() => {
+      glitchTitleToText("This is CORE");
+    }, 1800);
+  }, 2100);
 }
 
 function renderFeatureCards() {

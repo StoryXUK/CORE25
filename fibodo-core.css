@@ -114,30 +114,41 @@ svg { display: block; }
   letter-spacing: -0.06em;
   font-weight: 950;
 }
+#heroAudience {
+  position: relative;
+  display: inline-block;
+}
 #heroTitle::before,
-#heroTitle::after {
+#heroTitle::after,
+#heroAudience::before,
+#heroAudience::after {
   content: attr(data-text);
   position: absolute;
   inset: 0;
   pointer-events: none;
   opacity: 0;
 }
-#heroTitle::before {
+#heroTitle::before,
+#heroAudience::before {
   color: var(--aqua);
   transform: translate(0);
 }
-#heroTitle::after {
+#heroTitle::after,
+#heroAudience::after {
   color: var(--orange);
   transform: translate(0);
 }
-#heroTitle.is-glitching {
+#heroTitle.is-glitching,
+#heroAudience.is-glitching {
   animation: glitch-main .6s steps(1, end);
 }
-#heroTitle.is-glitching::before {
+#heroTitle.is-glitching::before,
+#heroAudience.is-glitching::before {
   opacity: .85;
   animation: glitch-before .6s steps(1, end);
 }
-#heroTitle.is-glitching::after {
+#heroTitle.is-glitching::after,
+#heroAudience.is-glitching::after {
   opacity: .8;
   animation: glitch-after .6s steps(1, end);
 }
