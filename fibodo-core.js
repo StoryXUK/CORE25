@@ -67,7 +67,13 @@ function runHeroTitleGlitch() {
   const title = document.getElementById("heroTitle");
   if (!title) return;
 
-  const glitchToText = (text) => {
+  const audienceWords = ["Trainer", "Instructor", "Coach"];
+  let audienceIndex = 0;
+
+  const glitchToAudience = () => {
+    audienceIndex = (audienceIndex + 1) % audienceWords.length;
+    const text = `Made For The ${audienceWords[audienceIndex]}.`;
+
     title.dataset.text = title.textContent;
     title.classList.add("is-glitching");
 
@@ -78,16 +84,11 @@ function runHeroTitleGlitch() {
 
     window.setTimeout(() => {
       title.classList.remove("is-glitching");
-    }, 760);
+    }, 600);
   };
 
-  window.setTimeout(() => {
-    glitchToText("For Only £25 a month.");
-
-    window.setTimeout(() => {
-      glitchToText("This is CORE");
-    }, 1800);
-  }, 1900);
+  title.dataset.text = title.textContent;
+  window.setInterval(glitchToAudience, 700);
 }
 
 function renderFeatureCards() {

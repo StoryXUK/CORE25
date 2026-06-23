@@ -131,15 +131,15 @@ svg { display: block; }
   transform: translate(0);
 }
 #heroTitle.is-glitching {
-  animation: glitch-main .72s steps(1, end);
+  animation: glitch-main .6s steps(1, end);
 }
 #heroTitle.is-glitching::before {
   opacity: .85;
-  animation: glitch-before .72s steps(1, end);
+  animation: glitch-before .6s steps(1, end);
 }
 #heroTitle.is-glitching::after {
   opacity: .8;
-  animation: glitch-after .72s steps(1, end);
+  animation: glitch-after .6s steps(1, end);
 }
 @keyframes glitch-main {
   0% { transform: translate(0); filter: none; }
