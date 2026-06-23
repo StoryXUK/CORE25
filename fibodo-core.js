@@ -68,7 +68,7 @@ function runHeroTitleGlitch() {
   const audience = document.getElementById("heroAudience");
   if (!title) return;
 
-  const audienceWords = ["Instructor", "Coach"];
+  const audienceWords = ["Instructor", "Coachs"];
   let audienceIndex = 0;
 
   const glitchElementToText = (element, text) => {
