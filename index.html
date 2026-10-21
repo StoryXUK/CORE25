@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <meta content="#f7f5f0" name="theme-color" />
-    <meta
-        content="CORE by fibodo brings your website, bookings, payments and customers together. Start free, upgrade from £25 per month."
-        name="description" />
-    <title>CORE by fibodo — Your business. Connected.</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#f7f5f0" name="theme-color"/>
+<meta content="CORE by fibodo brings your website, bookings, payments and customers together. Start free, upgrade from £25 per month." name="description"/>
+<title>CORE by fibodo — Your business. Connected.</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
         :root {
             --orange: #f45b25;
             --ink: #121916;
@@ -1821,304 +1816,51 @@
             }
         }
 
-        /* Restored presentation sections — 21 October */
-        .benefits-showcase {
-            background: #0b1713;
-            color: #fff;
-            padding: 100px 0 85px
-        }
+/* Restored presentation sections — 21 October */
+.benefits-showcase{background:#0b1713;color:#fff;padding:100px 0 85px}
+.benefits-showcase .bs-intro{text-align:center;max-width:790px;margin:0 auto 48px}
+.benefits-showcase .bs-intro h2{font-size:clamp(2.3rem,4vw,4rem);margin:15px 0}
+.benefits-showcase .bs-intro p{color:#c3cdc6;font-size:1.1rem}
+.bs-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.bs-card{display:flex;flex-direction:column;border:1px solid #34433d;border-top:3px solid #d5fc24;background:#17231f;border-radius:11px;padding:24px 20px 14px;min-height:420px}
+.bs-card .bs-tag{color:#d5fc24;font-size:.68rem;font-weight:800;letter-spacing:.12em}
+.bs-card h3{margin:14px 0 10px;font-size:1.25rem;letter-spacing:-.03em}
+.bs-card p{font-size:.86rem;line-height:1.7;color:#c5cec7;flex:1}
+.bs-card img{width:100%;height:155px;object-fit:cover;border-radius:8px;margin-top:16px}
+.bs-card a{display:grid;place-items:center;width:36px;height:36px;background:#d5fc24;color:#111c14;border-radius:5px;font-weight:900;margin-top:8px}
+.bs-quote{text-align:center;color:#c89de1;font-size:1.2rem;font-weight:700;font-style:italic;max-width:470px;margin:48px auto 0}
+.bs-quote:before{content:'“';display:block;font-size:3rem;line-height:1}
+.free-ad{background:#07130f;color:#fff;padding:110px 0;overflow:hidden}
+.free-ad-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.free-ad h2{font-size:clamp(3rem,5vw,5.4rem);line-height:1.04;margin:20px 0}
+.free-ad h2 em{display:block;font-style:normal;color:#d7ff28;font-weight:900;letter-spacing:-.055em}
+.free-ad .free-ad-desc{color:#aebdb4;max-width:530px;font-size:1.05rem}
+.free-ad-checks{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:25px 0 28px}
+.free-ad-checks span{padding:12px;border:1px solid #33463c;border-radius:8px;font-size:.8rem;font-weight:700}
+.free-ad-checks span:before{content:'✓';color:#d7ff28;margin-right:10px}
+.free-ad-actions{display:flex;gap:12px;flex-wrap:wrap}
+.free-ad-preview{position:relative;max-width:550px;margin:auto;width:100%}
+.free-ad-browser{background:#f8f9f4;border-radius:17px;overflow:hidden;box-shadow:0 25px 65px #0008;color:#0b1811}
+.free-ad-browserbar{background:#e6e8e2;color:#6d786e;padding:11px 15px;font-size:.72rem}
+.free-ad-browserbody{display:grid;grid-template-columns:1fr 1fr;min-height:330px;align-items:center}
+.free-ad-browsercopy{padding:26px}
+.free-ad-browsercopy h3{font-size:clamp(1.5rem,2.6vw,2.5rem);line-height:1.1}
+.free-ad-browsercopy p{font-size:.78rem;color:#647269}
+.free-ad-browsercopy span{display:inline-block;background:#07130f;color:white;padding:10px 14px;border-radius:30px;font-size:.72rem;font-weight:800}
+.free-ad-browserbody img{width:100%;height:100%;min-height:330px;object-fit:cover}
+.free-ad-listing{position:absolute;right:-24px;bottom:-26px;background:#fff;color:#17221b;border-radius:12px;padding:17px 22px;box-shadow:0 15px 50px #0005;max-width:280px}
+.free-ad-listing strong{display:block;font-size:.8rem}.free-ad-listing small{color:#68766d;font-size:.7rem}
+.free-ad-listing .listing-label{color:#f45b25;font-size:.65rem;font-weight:900}
+@media(max-width:900px){.bs-grid{grid-template-columns:1fr}.bs-card{min-height:0}.bs-card img{height:220px}.free-ad-grid{grid-template-columns:1fr;gap:55px}}
+@media(max-width:560px){.free-ad{padding:70px 0 100px}.free-ad-checks{grid-template-columns:1fr}.free-ad-listing{right:0}.free-ad-browserbody{min-height:260px}.free-ad-browserbody img{min-height:260px}.free-ad-browsercopy{padding:15px}}
 
-        .benefits-showcase .bs-intro {
-            text-align: center;
-            max-width: 790px;
-            margin: 0 auto 48px
-        }
-
-        .benefits-showcase .bs-intro h2 {
-            font-size: clamp(2.3rem, 4vw, 4rem);
-            margin: 15px 0
-        }
-
-        .benefits-showcase .bs-intro p {
-            color: #c3cdc6;
-            font-size: 1.1rem
-        }
-
-        .bs-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 18px
-        }
-
-        .bs-card {
-            display: flex;
-            flex-direction: column;
-            border: 1px solid #34433d;
-            border-top: 3px solid #d5fc24;
-            background: #17231f;
-            border-radius: 11px;
-            padding: 24px 20px 14px;
-            min-height: 420px
-        }
-
-        .bs-card .bs-tag {
-            color: #d5fc24;
-            font-size: .68rem;
-            font-weight: 800;
-            letter-spacing: .12em
-        }
-
-        .bs-card h3 {
-            margin: 14px 0 10px;
-            font-size: 1.25rem;
-            letter-spacing: -.03em
-        }
-
-        .bs-card p {
-            font-size: .86rem;
-            line-height: 1.7;
-            color: #c5cec7;
-            flex: 1
-        }
-
-        .bs-card img {
-            width: 100%;
-            height: 155px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-top: 16px
-        }
-
-        .bs-card a {
-            display: grid;
-            place-items: center;
-            width: 36px;
-            height: 36px;
-            background: #d5fc24;
-            color: #111c14;
-            border-radius: 5px;
-            font-weight: 900;
-            margin-top: 8px
-        }
-
-        .bs-quote {
-            text-align: center;
-            color: #c89de1;
-            font-size: 1.2rem;
-            font-weight: 700;
-            font-style: italic;
-            max-width: 470px;
-            margin: 48px auto 0
-        }
-
-        .bs-quote:before {
-            content: '“';
-            display: block;
-            font-size: 3rem;
-            line-height: 1
-        }
-
-        .free-ad {
-            background: #07130f;
-            color: #fff;
-            padding: 110px 0;
-            overflow: hidden
-        }
-
-        .free-ad-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 70px;
-            align-items: center
-        }
-
-        .free-ad h2 {
-            font-size: clamp(3rem, 5vw, 5.4rem);
-            line-height: 1.04;
-            margin: 20px 0
-        }
-
-        .free-ad h2 em {
-            display: block;
-            font-style: normal;
-            color: #d7ff28;
-            font-weight: 900;
-            letter-spacing: -.055em
-        }
-
-        .free-ad .free-ad-desc {
-            color: #aebdb4;
-            max-width: 530px;
-            font-size: 1.05rem
-        }
-
-        .free-ad-checks {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 9px;
-            margin: 25px 0 28px
-        }
-
-        .free-ad-checks span {
-            padding: 12px;
-            border: 1px solid #33463c;
-            border-radius: 8px;
-            font-size: .8rem;
-            font-weight: 700
-        }
-
-        .free-ad-checks span:before {
-            content: '✓';
-            color: #d7ff28;
-            margin-right: 10px
-        }
-
-        .free-ad-actions {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap
-        }
-
-        .free-ad-preview {
-            position: relative;
-            max-width: 550px;
-            margin: auto;
-            width: 100%
-        }
-
-        .free-ad-browser {
-            background: #f8f9f4;
-            border-radius: 17px;
-            overflow: hidden;
-            box-shadow: 0 25px 65px #0008;
-            color: #0b1811
-        }
-
-        .free-ad-browserbar {
-            background: #e6e8e2;
-            color: #6d786e;
-            padding: 11px 15px;
-            font-size: .72rem
-        }
-
-        .free-ad-browserbody {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            min-height: 330px;
-            align-items: center
-        }
-
-        .free-ad-browsercopy {
-            padding: 26px
-        }
-
-        .free-ad-browsercopy h3 {
-            font-size: clamp(1.5rem, 2.6vw, 2.5rem);
-            line-height: 1.1
-        }
-
-        .free-ad-browsercopy p {
-            font-size: .78rem;
-            color: #647269
-        }
-
-        .free-ad-browsercopy span {
-            display: inline-block;
-            background: #07130f;
-            color: white;
-            padding: 10px 14px;
-            border-radius: 30px;
-            font-size: .72rem;
-            font-weight: 800
-        }
-
-        .free-ad-browserbody img {
-            width: 100%;
-            height: 100%;
-            min-height: 330px;
-            object-fit: cover
-        }
-
-        .free-ad-listing {
-            position: absolute;
-            right: -24px;
-            bottom: -26px;
-            background: #fff;
-            color: #17221b;
-            border-radius: 12px;
-            padding: 17px 22px;
-            box-shadow: 0 15px 50px #0005;
-            max-width: 280px
-        }
-
-        .free-ad-listing strong {
-            display: block;
-            font-size: .8rem
-        }
-
-        .free-ad-listing small {
-            color: #68766d;
-            font-size: .7rem
-        }
-
-        .free-ad-listing .listing-label {
-            color: #f45b25;
-            font-size: .65rem;
-            font-weight: 900
-        }
-
-        @media(max-width:900px) {
-            .bs-grid {
-                grid-template-columns: 1fr
-            }
-
-            .bs-card {
-                min-height: 0
-            }
-
-            .bs-card img {
-                height: 220px
-            }
-
-            .free-ad-grid {
-                grid-template-columns: 1fr;
-                gap: 55px
-            }
-        }
-
-        @media(max-width:560px) {
-            .free-ad {
-                padding: 70px 0 100px
-            }
-
-            .free-ad-checks {
-                grid-template-columns: 1fr
-            }
-
-            .free-ad-listing {
-                right: 0
-            }
-
-            .free-ad-browserbody {
-                min-height: 260px
-            }
-
-            .free-ad-browserbody img {
-                min-height: 260px
-            }
-
-            .free-ad-browsercopy {
-                padding: 15px
-            }
-        }
     </style>
-    <link href="./navigation.css" rel="stylesheet" />
-    <link href="footer.css" rel="stylesheet" />
+<link href="./navigation.css" rel="stylesheet"/>
+<link href="footer.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <div data-root="./" id="core-navigation"></div>
-    <main id="top">
+<div data-root="./" id="core-navigation"></div>
+<main id="top">
 
 
 
@@ -2129,354 +1871,267 @@
 
 
 
-        <section class="hero">
-            <div class="wrap hero-grid">
-                <div class="hero-copy reveal"><span class="eyebrow">CORE BY FIBODO · YOUR BUSINESS PLATFORM</span>
-                    <h1>Your business.<span class="orange-text">Your way.</span></h1>
-                    <p class="lead">Ready for your business today. Built for what comes next.</p>
-                    <p class="lead">One connected place for your website, bookings, payments and customers. Less time
+<section class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy reveal"><span class="eyebrow">CORE BY FIBODO · YOUR BUSINESS PLATFORM</span>
+<h1>Your business.<span class="orange-text">Your way.</span></h1>
+<p class="lead">Ready for your business today. Built for what comes next.</p>
+<p class="lead">One connected place for your website, bookings, payments and customers. Less time
                         managing systems. More time doing what you do best.</p>
-                    <div class="actions"><a class="btn btn-orange" href="https://core.fibodo.com/">Get started for free
+<div class="actions"><a class="btn btn-orange" href="https://core.fibodo.com/">Get started for free
                             <span>↗</span></a><a class="btn btn-outline" href="#how">Explore CORE ↓</a></div>
-                    <p class="micro">Free website. Free hosting. Your own URL. Free forever.</p>
-                </div>
-                <div class="hero-stage reveal">
-                    <div class="hero-backdrop"></div>
-                    <div class="browser">
-                        <div class="browser-top"><i></i><i></i><i></i><span>core.fibodo.com / dashboard</span></div>
-                        <div class="app-preview">
-                            <aside class="side"><strong>CORE</strong>
-                                <div>▦ Dashboard</div>
-                                <div>▤ Planner</div>
-                                <div>◫ Bookings</div>
-                                <div>♧ Customers</div>
-                                <div>▥ Financials</div>
-                                <div>⚙ Settings</div>
-                            </aside>
-                            <div class="app-main">
-                                <h4>Good morning, Alex.</h4>
-                                <p>Here's what's happening in your business.</p>
-                                <div class="stat-grid">
-                                    <div class="stat"><b>24</b><small>Bookings</small></div>
-                                    <div class="stat"><b>£1,240</b><small>Revenue</small></div>
-                                    <div class="stat"><b>186</b><small>Clients</small></div>
-                                </div>
-                                <div class="chart-box"><strong>Booking activity</strong>
-                                    <div class="bars"><i style="height:35%"></i><i style="height:62%"></i><i
-                                            style="height:46%"></i><i style="height:82%"></i><i
-                                            style="height:55%"></i><i style="height:93%"></i><i style="height:73%"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="float-card">
-                        <div class="tick">✓</div>
-                        <div><b>New booking confirmed</b><small>Personal training · 10:30 AM</small></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section" id="who">
-            <div class="wrap">
-                <div class="sector-heading reveal"><span class="eyebrow">BUILT AROUND YOUR BUSINESS</span>
-                    <div>
-                        <h2>Different businesses.<br />One powerful <span class="orange-text">CORE.</span></h2>
-                        <p class="lead">Whatever you teach, coach or deliver, CORE adapts to how you work — not the
+<p class="micro">Free website. Free hosting. Your own URL. Free forever.</p>
+</div>
+<div class="hero-stage reveal">
+<div class="hero-backdrop"></div>
+<div class="browser">
+<div class="browser-top"><i></i><i></i><i></i><span>core.fibodo.com / dashboard</span></div>
+<div class="app-preview">
+<aside class="side"><strong>CORE</strong>
+<div>▦ Dashboard</div>
+<div>▤ Planner</div>
+<div>◫ Bookings</div>
+<div>♧ Customers</div>
+<div>▥ Financials</div>
+<div>⚙ Settings</div>
+</aside>
+<div class="app-main">
+<h4>Good morning, Alex.</h4>
+<p>Here's what's happening in your business.</p>
+<div class="stat-grid">
+<div class="stat"><b>24</b><small>Bookings</small></div>
+<div class="stat"><b>£1,240</b><small>Revenue</small></div>
+<div class="stat"><b>186</b><small>Clients</small></div>
+</div>
+<div class="chart-box"><strong>Booking activity</strong>
+<div class="bars"><i style="height:35%"></i><i style="height:62%"></i><i style="height:46%"></i><i style="height:82%"></i><i style="height:55%"></i><i style="height:93%"></i><i style="height:73%"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="float-card">
+<div class="tick">✓</div>
+<div><b>New booking confirmed</b><small>Personal training · 10:30 AM</small></div>
+</div>
+</div>
+</div>
+</section><section class="section" id="who">
+<div class="wrap">
+<div class="sector-heading reveal"><span class="eyebrow">BUILT AROUND YOUR BUSINESS</span>
+<div>
+<h2>Different businesses.<br/>One powerful <span class="orange-text">CORE.</span></h2>
+<p class="lead">Whatever you teach, coach or deliver, CORE adapts to how you work — not the
                             other way around.</p>
-                    </div>
-                </div>
-                <div class="sector-grid"><a class="sector" href="fitness.html"><img alt="Fitness and personal training"
-                            loading="lazy" src="images/fitness.jpg" />
-                        <div class="sector-content">
-                            <h3>CORE Fitness</h3>
-                            <p>Your clients. Your calendar. Your business.</p><b>Explore fitness ↗</b>
-                        </div>
-                    </a><a class="sector" href="swim.html"><img alt="Swimming lessons" loading="lazy"
-                            src="images/swim.jpg" />
-                        <div class="sector-content">
-                            <h3>CORE Swim</h3>
-                            <p>More teaching. Less organising.</p><b>Explore swim ↗</b>
-                        </div>
-                    </a><a class="sector" href="paddle.html"><img alt="Paddle coaching" loading="lazy"
-                            src="images/paddle.jpg" />
-                        <div class="sector-content">
-                            <h3>CORE Paddle</h3>
-                            <p>More water. Less admin.</p><b>Explore paddle ↗</b>
-                        </div>
-                    </a><a class="sector" href="tennis.html"><img alt="Tennis coaching" loading="lazy"
-                            src="images/tennis.jpg" />
-                        <div class="sector-content">
-                            <h3>CORE Tennis</h3>
-                            <p>Keep your coaching moving.</p><b>Explore tennis ↗</b>
-                        </div>
-                    </a><a class="sector" href="golf.html"><img alt="Golf coaching" loading="lazy"
-                            src="images/golf.jpg" />
-                        <div class="sector-content">
-                            <h3>CORE Golf</h3>
-                            <p>A better coaching business.</p><b>Explore golf ↗</b>
-                        </div>
-                    </a></div>
-            </div>
-        </section>
-
-        <section aria-labelledby="features-campaign-title" class="section dark features-campaign" id="benefits">
-            <div class="wrap campaign-layout">
-                <div class="campaign-copy reveal">
-                    <span class="campaign-kicker"><span class="campaign-kicker-dot"></span> ALL YOUR BUSINESS TOOLS.
-                        FINALLY TOGETHER.</span>
-                    <h2 id="features-campaign-title">Less juggling.<br /><span>More doing.</span><br />All CORE.</h2>
-                    <p class="campaign-lead">The brilliant part isn't having more tools. It's having the right ones
-                        working together. From your first booking to your next big milestone, everything connects.</p>
-                    <div class="campaign-actions"><a class="campaign-cta" href="features/index.html">Discover all CORE
-                            features <span aria-hidden="true">↗</span></a><span class="campaign-side-note">One
-                            platform.<br />More possibilities.</span></div>
-                </div>
-                <div aria-label="Connected CORE business features" class="campaign-art reveal">
-                    <div class="campaign-orbit campaign-orbit-one"></div>
-                    <div class="campaign-orbit campaign-orbit-two"></div>
-                    <div class="campaign-central"><span class="campaign-central-overline">POWERED BY
-                            FIBODO</span><strong>CORE<span>.</span></strong><small>Everything connects.</small></div>
-                    <a class="campaign-chip campaign-chip-one" href="features/bookings.html"><span
-                            class="campaign-chip-icon">▦</span><span>Bookings<small>Fill your
-                                diary</small></span><b>↗</b></a>
-                    <a class="campaign-chip campaign-chip-two" href="features/payments.html"><span
-                            class="campaign-chip-icon">£</span><span>Payments<small>Get paid,
-                                simply</small></span><b>↗</b></a>
-                    <a class="campaign-chip campaign-chip-three" href="features/crm.html"><span
-                            class="campaign-chip-icon">◎</span><span>CRM<small>Know your
-                                clients</small></span><b>↗</b></a>
-                    <a class="campaign-chip campaign-chip-four" href="features/website.html"><span
-                            class="campaign-chip-icon">⌘</span><span>Website<small>Be
-                                discovered</small></span><b>↗</b></a>
-                    <a class="campaign-chip campaign-chip-five" href="features/memberships.html"><span
-                            class="campaign-chip-icon">✳</span><span>Memberships<small>Keep them coming
-                                back</small></span><b>↗</b></a>
-                    <div class="campaign-accent campaign-accent-one">✦</div>
-                    <div class="campaign-accent campaign-accent-two">✦</div>
-                </div>
-            </div>
-            <div class="wrap campaign-footer"><span>BUILT TO WORK TOGETHER</span><span>BOOKINGS <i>•</i> PAYMENTS
-                    <i>•</i> CRM <i>•</i> WEBSITE <i>•</i> AND SO MUCH MORE</span></div>
-        </section>
-        
-        <section class="section" id="features">
-            <div class="wrap">
-                <div class="feature-head">
-                    <div><span class="eyebrow">THE BUSINESS BIT. BUILT IN.</span>
-                        <h2>More control.<br />Less admin.<br /><span class="orange-text">More momentum.</span></h2>
-                    </div>
-                    <p class="lead">Powerful tools designed to help you spend less time on the day-to-day and more time
-                        building the business you want.</p>
-                </div>
-                <div class="feature-grid">
-                    <article class="feature"><small>01 / BOOKINGS</small>
-                        <h3>Bookings &amp; scheduling</h3>
-                        <p>Let customers book online while you stay in control of your diary.</p>
-                    </article>
-                    <article class="feature"><small>02 / PAYMENTS</small>
-                        <h3>Payments &amp; financials</h3>
-                        <p>Manage transactions and keep your income visible.</p>
-                    </article>
-                    <article class="feature"><small>03 / CUSTOMERS</small>
-                        <h3>CRM &amp; messaging</h3>
-                        <p>Keep your client information and conversations together.</p>
-                    </article>
-                    <article class="feature"><small>04 / RETENTION</small>
-                        <h3>Memberships &amp; vouchers</h3>
-                        <p>Offer more ways to buy, book and come back.</p>
-                    </article>
-                    <article class="feature"><small>05 / VISIBILITY</small>
-                        <h3>Websites &amp; marketing</h3>
-                        <p>Build your presence and share your services with confidence.</p>
-                    </article>
-                    <article class="feature"><small>06 / GROWTH</small>
-                        <h3>Reporting &amp; insights</h3>
-                        <p>Understand your business with useful, connected information.</p>
-                    </article>
-                </div>
-                <div class="actions"><a class="btn btn-outline" href="features/index.html">Explore all features
-                        ↗</a></div>
-            </div>
-        </section>
-        
-        <section aria-labelledby="benefits-showcase-title" class="benefits-showcase" id="booking-benefits">
-            <div class="wrap">
-                <div class="bs-intro"><span class="eyebrow" style="color:#d5fc24">WHAT ARE THE BENEFITS</span>
-                    <h2 id="benefits-showcase-title">Smarter booking starts here</h2>
-                    <p>Make every step easier for your customers, from finding you and booking in, to paying, managing
-                        their plans and coming back again.</p>
-                </div>
-                <div class="bs-grid">
-                    <article class="bs-card"><span class="bs-tag">CUSTOMER ACCESS</span>
-                        <h3>Book where and when they want</h3>
-                        <p>Give customers a simple, always-on way to find you, view availability, book, pay and manage
-                            their plans — through a website and app built around your business.</p><a
-                            aria-label="Explore bookings" href="features/bookings.html">↗</a><img
-                            alt="Fitness class available to book" loading="lazy" src="images/fitness.jpg" />
-                    </article>
-                    <article class="bs-card"><span class="bs-tag">PAYMENTS</span>
-                        <h3>Payments that happen in real time</h3>
-                        <p>Take payment at the point of booking and manage memberships, packs, vouchers, renewals,
-                            receipts and refunds through one connected flow. Customers get a smoother experience. You
-                            get clearer revenue visibility, without chasing payments or stitching systems together.</p>
-                        <a aria-label="Explore payments" href="features/payments.html">↗</a><img
-                            alt="Business payments and financial management" loading="lazy"
-                            src="images/journey-paid.jpg" />
-                    </article>
-                    <article class="bs-card"><span class="bs-tag">CUSTOMER COMMUNICATION</span>
-                        <h3>Stay connected between bookings</h3>
-                        <p>Your website and customer app give people a familiar place to return to, with booking
-                            confirmations, reminders, updates, offers and the next reason to book. It is not just a
-                            booking link. It is a branded customer experience that keeps your business close.</p><a
-                            aria-label="Explore messaging" href="features/messages.html">↗</a><img
-                            alt="Customer relationships and communication" loading="lazy"
-                            src="images/journey-grow.jpg" />
-                    </article>
-                </div>
-                <p class="bs-quote">Everything works together, so the business feels easier to run.</p>
-            </div>
-        </section>
-
-        <section class="section philosophy" id="how">
-            <div class="wrap">
-                <div class="philosophy-top">
-                    <div><span class="eyebrow">DESIGNED TO REMOVE FRICTION</span>
-                        <h2>Technology should make business feel <span class="orange-text">lighter.</span></h2>
-                    </div>
-                    <p class="lead">The best technology makes itself almost invisible. CORE brings the essentials
+</div>
+</div>
+<div class="sector-grid"><a class="sector" href="fitness.html"><img alt="Fitness and personal training" loading="lazy" src="images/fitness.jpg"/>
+<div class="sector-content">
+<h3>CORE Fitness</h3>
+<p>Your clients. Your calendar. Your business.</p><b>Explore fitness ↗</b>
+</div>
+</a><a class="sector" href="swim.html"><img alt="Swimming lessons" loading="lazy" src="images/swim.jpg"/>
+<div class="sector-content">
+<h3>CORE Swim</h3>
+<p>More teaching. Less organising.</p><b>Explore swim ↗</b>
+</div>
+</a><a class="sector" href="paddle.html"><img alt="Paddle coaching" loading="lazy" src="images/paddle.jpg"/>
+<div class="sector-content">
+<h3>CORE Paddle</h3>
+<p>More water. Less admin.</p><b>Explore paddle ↗</b>
+</div>
+</a><a class="sector" href="tennis.html"><img alt="Tennis coaching" loading="lazy" src="images/tennis.jpg"/>
+<div class="sector-content">
+<h3>CORE Tennis</h3>
+<p>Keep your coaching moving.</p><b>Explore tennis ↗</b>
+</div>
+</a><a class="sector" href="golf.html"><img alt="Golf coaching" loading="lazy" src="images/golf.jpg"/>
+<div class="sector-content">
+<h3>CORE Golf</h3>
+<p>A better coaching business.</p><b>Explore golf ↗</b>
+</div>
+</a></div>
+</div>
+</section><section class="section philosophy" id="how">
+<div class="wrap">
+<div class="philosophy-top">
+<div><span class="eyebrow">DESIGNED TO REMOVE FRICTION</span>
+<h2>Technology should make business feel <span class="orange-text">lighter.</span></h2>
+</div>
+<p class="lead">The best technology makes itself almost invisible. CORE brings the essentials
                         together so everything simply works.</p>
-                </div>
-                <div class="principles">
-                    <div class="principle"><small>01</small>
-                        <h3>Simple by design</h3>
-                        <p>Clear tools and straightforward workflows, without the unnecessary complexity.</p>
-                    </div>
-                    <div class="principle"><small>02</small>
-                        <h3>Built to be useful</h3>
-                        <p>Everything you need for scheduling, selling and serving customers.</p>
-                    </div>
-                    <div class="principle"><small>03</small>
-                        <h3>Ready to grow</h3>
-                        <p>Start with what matters and expand when your ambitions do.</p>
-                    </div>
-                    <div class="principle"><small>04</small>
-                        <h3>Human support</h3>
-                        <p>Real guidance from people who understand your business.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section dark" id="apps">
-            <div class="wrap apps-grid">
-                <div><span class="eyebrow">FIBODO APPS</span>
-                    <h2>Your business.<br />In their <span class="orange-text">pocket.</span></h2>
-                    <p class="lead">A seamless mobile experience for your customers. Make it easy to book, manage
+</div>
+<div class="principles">
+<div class="principle"><small>01</small>
+<h3>Simple by design</h3>
+<p>Clear tools and straightforward workflows, without the unnecessary complexity.</p>
+</div>
+<div class="principle"><small>02</small>
+<h3>Built to be useful</h3>
+<p>Everything you need for scheduling, selling and serving customers.</p>
+</div>
+<div class="principle"><small>03</small>
+<h3>Ready to grow</h3>
+<p>Start with what matters and expand when your ambitions do.</p>
+</div>
+<div class="principle"><small>04</small>
+<h3>Human support</h3>
+<p>Real guidance from people who understand your business.</p>
+</div>
+</div>
+</div>
+</section><section class="section" id="features">
+<div class="wrap">
+<div class="feature-head">
+<div><span class="eyebrow">THE BUSINESS BIT. BUILT IN.</span>
+<h2>More control.<br/>Less admin.<br/><span class="orange-text">More momentum.</span></h2>
+</div>
+<p class="lead">Powerful tools designed to help you spend less time on the day-to-day and more time
+                        building the business you want.</p>
+</div>
+<div class="feature-grid">
+<article class="feature"><small>01 / BOOKINGS</small>
+<h3>Bookings &amp; scheduling</h3>
+<p>Let customers book online while you stay in control of your diary.</p>
+</article>
+<article class="feature"><small>02 / PAYMENTS</small>
+<h3>Payments &amp; financials</h3>
+<p>Manage transactions and keep your income visible.</p>
+</article>
+<article class="feature"><small>03 / CUSTOMERS</small>
+<h3>CRM &amp; messaging</h3>
+<p>Keep your client information and conversations together.</p>
+</article>
+<article class="feature"><small>04 / RETENTION</small>
+<h3>Memberships &amp; vouchers</h3>
+<p>Offer more ways to buy, book and come back.</p>
+</article>
+<article class="feature"><small>05 / VISIBILITY</small>
+<h3>Websites &amp; marketing</h3>
+<p>Build your presence and share your services with confidence.</p>
+</article>
+<article class="feature"><small>06 / GROWTH</small>
+<h3>Reporting &amp; insights</h3>
+<p>Understand your business with useful, connected information.</p>
+</article>
+</div>
+<div class="actions"><a class="btn btn-outline" href="features/index.html">Explore all features
+                        ↗</a></div>
+</div>
+</section><section aria-labelledby="features-campaign-title" class="section dark features-campaign" id="benefits">
+<div class="wrap campaign-layout">
+<div class="campaign-copy reveal">
+<span class="campaign-kicker"><span class="campaign-kicker-dot"></span> ALL YOUR BUSINESS TOOLS.
+                        FINALLY TOGETHER.</span>
+<h2 id="features-campaign-title">Less juggling.<br/><span>More doing.</span><br/>All CORE.</h2>
+<p class="campaign-lead">The brilliant part isn't having more tools. It's having the right ones
+                        working together. From your first booking to your next big milestone, everything connects.</p>
+<div class="campaign-actions"><a class="campaign-cta" href="features/index.html">Discover all CORE
+                            features <span aria-hidden="true">↗</span></a><span class="campaign-side-note">One
+                            platform.<br/>More possibilities.</span></div>
+</div>
+<div aria-label="Connected CORE business features" class="campaign-art reveal">
+<div class="campaign-orbit campaign-orbit-one"></div>
+<div class="campaign-orbit campaign-orbit-two"></div>
+<div class="campaign-central"><span class="campaign-central-overline">POWERED BY
+                            FIBODO</span><strong>CORE<span>.</span></strong><small>Everything connects.</small></div>
+<a class="campaign-chip campaign-chip-one" href="features/bookings.html"><span class="campaign-chip-icon">▦</span><span>Bookings<small>Fill your
+                                diary</small></span><b>↗</b></a>
+<a class="campaign-chip campaign-chip-two" href="features/payments.html"><span class="campaign-chip-icon">£</span><span>Payments<small>Get paid,
+                                simply</small></span><b>↗</b></a>
+<a class="campaign-chip campaign-chip-three" href="features/crm.html"><span class="campaign-chip-icon">◎</span><span>CRM<small>Know your
+                                clients</small></span><b>↗</b></a>
+<a class="campaign-chip campaign-chip-four" href="features/website.html"><span class="campaign-chip-icon">⌘</span><span>Website<small>Be
+                                discovered</small></span><b>↗</b></a>
+<a class="campaign-chip campaign-chip-five" href="features/memberships.html"><span class="campaign-chip-icon">✳</span><span>Memberships<small>Keep them coming
+                                back</small></span><b>↗</b></a>
+<div class="campaign-accent campaign-accent-one">✦</div>
+<div class="campaign-accent campaign-accent-two">✦</div>
+</div>
+</div>
+<div class="wrap campaign-footer"><span>BUILT TO WORK TOGETHER</span><span>BOOKINGS <i>•</i> PAYMENTS
+                    <i>•</i> CRM <i>•</i> WEBSITE <i>•</i> AND SO MUCH MORE</span></div>
+</section><section aria-labelledby="benefits-showcase-title" class="benefits-showcase" id="booking-benefits">
+<div class="wrap">
+<div class="bs-intro"><span class="eyebrow" style="color:#d5fc24">WHAT ARE THE BENEFITS</span><h2 id="benefits-showcase-title">Smarter booking starts here</h2><p>Make every step easier for your customers, from finding you and booking in, to paying, managing their plans and coming back again.</p></div>
+<div class="bs-grid">
+<article class="bs-card"><span class="bs-tag">CUSTOMER ACCESS</span><h3>Book where and when they want</h3><p>Give customers a simple, always-on way to find you, view availability, book, pay and manage their plans — through a website and app built around your business.</p><a aria-label="Explore bookings" href="features/bookings.html">↗</a><img alt="Fitness class available to book" loading="lazy" src="images/fitness.jpg"/></article>
+<article class="bs-card"><span class="bs-tag">PAYMENTS</span><h3>Payments that happen in real time</h3><p>Take payment at the point of booking and manage memberships, packs, vouchers, renewals, receipts and refunds through one connected flow. Customers get a smoother experience. You get clearer revenue visibility, without chasing payments or stitching systems together.</p><a aria-label="Explore payments" href="features/payments.html">↗</a><img alt="Business payments and financial management" loading="lazy" src="images/journey-paid.jpg"/></article>
+<article class="bs-card"><span class="bs-tag">CUSTOMER COMMUNICATION</span><h3>Stay connected between bookings</h3><p>Your website and customer app give people a familiar place to return to, with booking confirmations, reminders, updates, offers and the next reason to book. It is not just a booking link. It is a branded customer experience that keeps your business close.</p><a aria-label="Explore messaging" href="features/messages.html">↗</a><img alt="Customer relationships and communication" loading="lazy" src="images/journey-grow.jpg"/></article>
+</div>
+<p class="bs-quote">Everything works together, so the business feels easier to run.</p>
+</div>
+</section><section class="section dark" id="apps">
+<div class="wrap apps-grid">
+<div><span class="eyebrow">FIBODO APPS</span>
+<h2>Your business.<br/>In their <span class="orange-text">pocket.</span></h2>
+<p class="lead">A seamless mobile experience for your customers. Make it easy to book, manage
                         sessions, stay connected and keep coming back — wherever they are.</p>
-                    <p class="lead">From your own branded client experience to a custom app, bring your business closer
+<p class="lead">From your own branded client experience to a custom app, bring your business closer
                         to the people who matter.</p>
-                    <div class="actions"><a class="btn btn-orange" href="contact-us.html">Explore fibodo apps ↗</a><a
-                            class="btn btn-outline" href="contact-us.html" style="border-color:#65766a">Talk to our team
+<div class="actions"><a class="btn btn-orange" href="contact-us.html">Explore fibodo apps ↗</a><a class="btn btn-outline" href="contact-us.html" style="border-color:#65766a">Talk to our team
                             ↗</a></div>
-                </div>
-                <div aria-label="Illustrative customer app screens" class="phones">
-                    <div class="phone">
-                        <div class="notch"></div>
-                        <h4>Good morning, Alex.</h4>
-                        <div class="hero-tile"><small>UPCOMING BOOKING</small>
-                            <h4 style="margin:12px 0 4px">Strength &amp; conditioning</h4><small>Tomorrow · 9:00
+</div>
+<div aria-label="Illustrative customer app screens" class="phones">
+<div class="phone">
+<div class="notch"></div>
+<h4>Good morning, Alex.</h4>
+<div class="hero-tile"><small>UPCOMING BOOKING</small>
+<h4 style="margin:12px 0 4px">Strength &amp; conditioning</h4><small>Tomorrow · 9:00
                                 AM</small>
-                        </div>
-                        <h4 style="font-size:13px">Explore sessions</h4>
-                        <div class="session"><img alt="" src="images/fitness.jpg">
-                            <div><b>Personal training</b><br /><small>Book your next session</small></div>
-                            </img>
-                        </div>
-                        <div class="session"><img alt="" src="images/swim.jpg">
-                            <div><b>Swim coaching</b><br /><small>Find availability</small></div>
-                            </img>
-                        </div>
-                    </div>
-                    <div class="phone">
-                        <div class="notch"></div>
-                        <h4>My account</h4>
-                        <div class="tile"><small>YOUR MEMBERSHIP</small><b>Active membership</b></div>
-                        <div class="tile"><small>UPCOMING</small><b>3 booked sessions</b></div>
-                        <div class="tile"><small>YOUR ACTIVITY</small><b>Bookings &amp; history</b></div>
-                        <div class="tile"><small>STAY CONNECTED</small><b>Messages &amp; updates</b></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section journey" id="journey">
-            <div class="wrap">
-                <div class="journey-head"><span class="eyebrow">FROM FIRST CLICK TO LOYAL CLIENT</span>
-                    <h2>One connected customer journey.</h2>
-                    <p class="lead">Four simple stages. Everything working together.</p>
-                </div>
-                <div aria-label="CORE customer journey" class="tabs" role="tablist"><button aria-selected="true"
-                        class="tab" data-step="0" role="tab"><span>01</span>Get visible</button><button
-                        aria-selected="false" class="tab" data-step="1" role="tab"><span>02</span>Get
-                        booked</button><button aria-selected="false" class="tab" data-step="2"
-                        role="tab"><span>03</span>Get paid</button><button aria-selected="false" class="tab"
-                        data-step="3" role="tab"><span>04</span>Grow</button></div>
-                <div class="journey-panel" id="journey-panel" role="tabpanel">
-                    <div><span class="eyebrow" id="journey-kicker">YOUR DIGITAL SHOP WINDOW</span>
-                        <h3 id="journey-title">Show people what makes you worth booking.</h3>
-                        <p id="journey-desc">Create a professional business profile and customer-friendly pages that
-                            bring your brand and services together.</p><a class="text-link" href="#free"
-                            id="journey-link">Discover your website ↗</a>
-                    </div>
-                    <div class="journey-shot"><img alt="CORE business dashboard example" id="journey-img"
-                            src="images/journey-visible.jpg" /></div>
-                </div>
-            </div>
-        </section>
-        <section aria-labelledby="free-ad-title" class="free-ad" id="free">
-            <div class="wrap free-ad-grid">
-                <div><span class="eyebrow" style="color:#d7ff28">YOUR BUSINESS STARTS HERE</span>
-                    <h2 id="free-ad-title">A professional website.<em>COMPLETELY FREE.</em></h2>
-                    <p class="free-ad-desc">You have a business worth discovering. With CORE Free, create a professional
-                        website, showcase your services and share your own bespoke URL. Hosting is included, so there
-                        are no monthly website or hosting charges.</p>
-                    <div class="free-ad-checks"><span>Free website</span><span>Free hosting</span><span>Bespoke
-                            URL</span><span>Promote services</span><span>findbookdo.com listing</span><span>Free
-                            forever</span></div>
-                    <div class="free-ad-actions"><a class="btn btn-orange" href="https://core.fibodo.com/">Get Started
-                            For Free ↗</a><a class="btn btn-white" href="free/index.html">Discover CORE Free ↗</a></div>
-                </div>
-                <div class="free-ad-preview">
-                    <div class="free-ad-browser">
-                        <div class="free-ad-browserbar">● ● ●   core.fibodo.com / your-business</div>
-                        <div class="free-ad-browserbody">
-                            <div class="free-ad-browsercopy">
-                                <h3>Make a splash with better lessons.</h3>
-                                <p>Friendly, confidence-building swim coaching for every age and stage.</p><span>Explore
-                                    lessons ↗</span>
-                            </div><img alt="Swimming lessons showcased on a sample CORE Free website" loading="lazy"
-                                src="images/swim.jpg" />
-                        </div>
-                    </div>
-                    <div class="free-ad-listing"><span class="listing-label">FINDBOOKDO.COM</span><strong>Blue Lane Swim
-                            Coaching</strong><small>Swimming lessons · Brighton · ★ 4.9</small></div>
-                </div>
-            </div>
-        </section>
-        <section class="closing">
-            <div class="wrap closing-inner">
-                <div><span class="eyebrow" style="color:#ffe4d8">YOUR NEXT CHAPTER STARTS HERE</span>
-                    <h2>Ready for your business today. Built for what comes next.</h2>
-                </div><a class="btn btn-white" href="https://core.fibodo.com/">Get started with CORE ↗</a>
-            </div>
-        </section>
-    </main>
-    <footer id="shared-footer"></footer>
-    <script>const steps = [{ k: 'YOUR DIGITAL SHOP WINDOW', t: 'Show people what makes you worth booking.', d: 'Create a professional business profile and customer-friendly pages that bring your brand and services together.', img: 'journey-visible.jpg', link: '#free', label: 'Discover your website ↗' }, { k: 'AVAILABLE AROUND THE CLOCK', t: 'Make it easy for customers to say yes.', d: 'Turn sessions, classes and appointments into bookable services and publish times that work for you.', img: 'journey-booked.jpg', link: '#features', label: 'Explore bookings ↗' }, { k: 'PAYMENTS CONNECTED TO BOOKINGS', t: 'Know what you sold and what you earned.', d: 'Set prices, take payments through the booking journey and keep your financial activity organised.', img: 'journey-paid.jpg', link: 'features/payments.html', label: 'Explore payments ↗' }, { k: 'BUILD RELATIONSHIPS, NOT SPREADSHEETS', t: 'Turn one booking into a business that lasts.', d: 'Keep customer information and activity together, understand your business and give people more reasons to return.', img: 'journey-grow.jpg', link: '#features', label: 'Explore CRM ↗' }]; document.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => { let s = steps[Number(b.dataset.step)]; document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', String(x === b))); document.getElementById('journey-kicker').textContent = s.k; document.getElementById('journey-title').textContent = s.t; document.getElementById('journey-desc').textContent = s.d; document.getElementById('journey-img').src = 'images/' + s.img; document.getElementById('journey-link').href = s.link; document.getElementById('journey-link').textContent = s.label })); if ('IntersectionObserver' in window) { const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) } }), { threshold: .1 }); document.querySelectorAll('.reveal').forEach(el => obs.observe(el)) } else document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+</div>
+<h4 style="font-size:13px">Explore sessions</h4>
+<div class="session"><img alt="" src="images/fitness.jpg">
+<div><b>Personal training</b><br/><small>Book your next session</small></div>
+</img></div>
+<div class="session"><img alt="" src="images/swim.jpg">
+<div><b>Swim coaching</b><br/><small>Find availability</small></div>
+</img></div>
+</div>
+<div class="phone">
+<div class="notch"></div>
+<h4>My account</h4>
+<div class="tile"><small>YOUR MEMBERSHIP</small><b>Active membership</b></div>
+<div class="tile"><small>UPCOMING</small><b>3 booked sessions</b></div>
+<div class="tile"><small>YOUR ACTIVITY</small><b>Bookings &amp; history</b></div>
+<div class="tile"><small>STAY CONNECTED</small><b>Messages &amp; updates</b></div>
+</div>
+</div>
+</div>
+</section><section class="section journey" id="journey">
+<div class="wrap">
+<div class="journey-head"><span class="eyebrow">FROM FIRST CLICK TO LOYAL CLIENT</span>
+<h2>One connected customer journey.</h2>
+<p class="lead">Four simple stages. Everything working together.</p>
+</div>
+<div aria-label="CORE customer journey" class="tabs" role="tablist"><button aria-selected="true" class="tab" data-step="0" role="tab"><span>01</span>Get visible</button><button aria-selected="false" class="tab" data-step="1" role="tab"><span>02</span>Get
+                        booked</button><button aria-selected="false" class="tab" data-step="2" role="tab"><span>03</span>Get paid</button><button aria-selected="false" class="tab" data-step="3" role="tab"><span>04</span>Grow</button></div>
+<div class="journey-panel" id="journey-panel" role="tabpanel">
+<div><span class="eyebrow" id="journey-kicker">YOUR DIGITAL SHOP WINDOW</span>
+<h3 id="journey-title">Show people what makes you worth booking.</h3>
+<p id="journey-desc">Create a professional business profile and customer-friendly pages that
+                            bring your brand and services together.</p><a class="text-link" href="#free" id="journey-link">Discover your website ↗</a>
+</div>
+<div class="journey-shot"><img alt="CORE business dashboard example" id="journey-img" src="images/journey-visible.jpg"/></div>
+</div>
+</div>
+</section><section aria-labelledby="free-ad-title" class="free-ad" id="free">
+<div class="wrap free-ad-grid">
+<div><span class="eyebrow" style="color:#d7ff28">YOUR BUSINESS STARTS HERE</span><h2 id="free-ad-title">A professional website.<em>COMPLETELY FREE.</em></h2><p class="free-ad-desc">You have a business worth discovering. With CORE Free, create a professional website, showcase your services and share your own bespoke URL. Hosting is included, so there are no monthly website or hosting charges.</p><div class="free-ad-checks"><span>Free website</span><span>Free hosting</span><span>Bespoke URL</span><span>Promote services</span><span>findbookdo.com listing</span><span>Free forever</span></div><div class="free-ad-actions"><a class="btn btn-orange" href="https://core.fibodo.com/">Get Started For Free ↗</a><a class="btn btn-white" href="free/index.html">Discover CORE Free ↗</a></div></div>
+<div class="free-ad-preview"><div class="free-ad-browser"><div class="free-ad-browserbar">● ● ●   core.fibodo.com / your-business</div><div class="free-ad-browserbody"><div class="free-ad-browsercopy"><h3>Make a splash with better lessons.</h3><p>Friendly, confidence-building swim coaching for every age and stage.</p><span>Explore lessons ↗</span></div><img alt="Swimming lessons showcased on a sample CORE Free website" loading="lazy" src="images/swim.jpg"/></div></div><div class="free-ad-listing"><span class="listing-label">FINDBOOKDO.COM</span><strong>Blue Lane Swim Coaching</strong><small>Swimming lessons · Brighton · ★ 4.9</small></div></div>
+</div>
+</section><section class="closing">
+<div class="wrap closing-inner">
+<div><span class="eyebrow" style="color:#ffe4d8">YOUR NEXT CHAPTER STARTS HERE</span>
+<h2>Ready for your business today. Built for what comes next.</h2>
+</div><a class="btn btn-white" href="https://core.fibodo.com/">Get started with CORE ↗</a>
+</div>
+</section></main>
+<footer id="shared-footer"></footer>
+<script>const steps = [{ k: 'YOUR DIGITAL SHOP WINDOW', t: 'Show people what makes you worth booking.', d: 'Create a professional business profile and customer-friendly pages that bring your brand and services together.', img: 'journey-visible.jpg', link: '#free', label: 'Discover your website ↗' }, { k: 'AVAILABLE AROUND THE CLOCK', t: 'Make it easy for customers to say yes.', d: 'Turn sessions, classes and appointments into bookable services and publish times that work for you.', img: 'journey-booked.jpg', link: '#features', label: 'Explore bookings ↗' }, { k: 'PAYMENTS CONNECTED TO BOOKINGS', t: 'Know what you sold and what you earned.', d: 'Set prices, take payments through the booking journey and keep your financial activity organised.', img: 'journey-paid.jpg', link: 'features/payments.html', label: 'Explore payments ↗' }, { k: 'BUILD RELATIONSHIPS, NOT SPREADSHEETS', t: 'Turn one booking into a business that lasts.', d: 'Keep customer information and activity together, understand your business and give people more reasons to return.', img: 'journey-grow.jpg', link: '#features', label: 'Explore CRM ↗' }]; document.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => { let s = steps[Number(b.dataset.step)]; document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', String(x === b))); document.getElementById('journey-kicker').textContent = s.k; document.getElementById('journey-title').textContent = s.t; document.getElementById('journey-desc').textContent = s.d; document.getElementById('journey-img').src = 'images/' + s.img; document.getElementById('journey-link').href = s.link; document.getElementById('journey-link').textContent = s.label })); if ('IntersectionObserver' in window) { const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) } }), { threshold: .1 }); document.querySelectorAll('.reveal').forEach(el => obs.observe(el)) } else document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
     </script>
-    <script src="./navigation.js"></script>
-    <script>const yearElement = document.getElementById('year'); if (yearElement) yearElement.textContent = new Date().getFullYear();</script>
-    <script src="footer.js"></script>
+<script src="./navigation.js"></script>
+<script>const yearElement = document.getElementById('year'); if (yearElement) yearElement.textContent = new Date().getFullYear();</script>
+<script src="footer.js"></script>
 </body>
-
 </html>

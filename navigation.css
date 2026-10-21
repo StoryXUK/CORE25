@@ -15,3 +15,6 @@
 @media(min-width:1201px) and (max-width:1430px){.business-items{grid-template-columns:repeat(2,minmax(0,1fr))}.business-items .mega-link{min-height:unset;flex-direction:row}}
 
 #features-panel{width:min(920px,calc(100vw - 60px));left:50%;transform:translateX(-50%)}#features-panel .mega-col{width:100%}.features-mega-items{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px 16px}.features-mega-items .mega-link{padding:12px 15px!important;min-height:42px}@media(max-width:1200px){#features-panel{position:static;width:100%;transform:none}.features-mega-items{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:550px){.features-mega-items{grid-template-columns:1fr}}
+
+/* Keep tall mega-menus inside the viewport so links can be reached without page scrolling. */
+@media(min-width:1201px){.mega-panel{max-height:calc(100dvh - 90px);overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}}

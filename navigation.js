@@ -12,13 +12,19 @@
   const setMega=(host,open)=>{closeAll(open?host:null);const panel=host.querySelector('.mega-panel'),trigger=host.querySelector('.mega-trigger');panel.hidden=!open;trigger.setAttribute('aria-expanded',String(open))};
   const closeMobile=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'};
   menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰';if(!open)closeAll()});
+  // Grace period prevents accidental closure while moving into a large mega-menu.
+  const closeTimers=new WeakMap();
+  const cancelClose=host=>{const timer=closeTimers.get(host);if(timer)clearTimeout(timer);closeTimers.delete(host)};
+  const scheduleClose=host=>{cancelClose(host);closeTimers.set(host,setTimeout(()=>{setMega(host,false);closeTimers.delete(host)},350))};
   hosts.forEach(host=>{
     const trigger=host.querySelector('.mega-trigger'),panel=host.querySelector('.mega-panel');
-    host.addEventListener('pointerenter',e=>{if(desktop()&&e.pointerType==='mouse')setMega(host,true)});
-    host.addEventListener('pointerleave',e=>{if(desktop()&&e.pointerType==='mouse')setMega(host,false)});
+    host.addEventListener('pointerenter',e=>{if(desktop()&&e.pointerType==='mouse'){cancelClose(host);setMega(host,true)}});
+    host.addEventListener('pointerleave',e=>{if(desktop()&&e.pointerType==='mouse')scheduleClose(host)});
+    panel.addEventListener('pointerenter',()=>cancelClose(host));
+    panel.addEventListener('pointerleave',e=>{if(desktop()&&e.pointerType==='mouse')scheduleClose(host)});
     host.addEventListener('focusin',()=>{if(desktop())setMega(host,true)});
     host.addEventListener('focusout',e=>{if(!host.contains(e.relatedTarget))setMega(host,false)});
-    trigger.addEventListener('click',e=>{e.stopPropagation();setMega(host,panel.hidden)});
+    trigger.addEventListener('click',e=>{e.stopPropagation();cancelClose(host);setMega(host,panel.hidden)});
   });
   document.addEventListener('click',e=>{if(!hosts.some(h=>h.contains(e.target)))closeAll()});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){const active=hosts.find(h=>!h.querySelector('.mega-panel').hidden);closeAll();if(active)active.querySelector('.mega-trigger').focus();else closeMobile()}});
