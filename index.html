@@ -1820,6 +1820,45 @@
                 transition: none
             }
         }
+
+/* Restored presentation sections — 21 October */
+.benefits-showcase{background:#0b1713;color:#fff;padding:100px 0 85px}
+.benefits-showcase .bs-intro{text-align:center;max-width:790px;margin:0 auto 48px}
+.benefits-showcase .bs-intro h2{font-size:clamp(2.3rem,4vw,4rem);margin:15px 0}
+.benefits-showcase .bs-intro p{color:#c3cdc6;font-size:1.1rem}
+.bs-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.bs-card{display:flex;flex-direction:column;border:1px solid #34433d;border-top:3px solid #d5fc24;background:#17231f;border-radius:11px;padding:24px 20px 14px;min-height:420px}
+.bs-card .bs-tag{color:#d5fc24;font-size:.68rem;font-weight:800;letter-spacing:.12em}
+.bs-card h3{margin:14px 0 10px;font-size:1.25rem;letter-spacing:-.03em}
+.bs-card p{font-size:.86rem;line-height:1.7;color:#c5cec7;flex:1}
+.bs-card img{width:100%;height:155px;object-fit:cover;border-radius:8px;margin-top:16px}
+.bs-card a{display:grid;place-items:center;width:36px;height:36px;background:#d5fc24;color:#111c14;border-radius:5px;font-weight:900;margin-top:8px}
+.bs-quote{text-align:center;color:#c89de1;font-size:1.2rem;font-weight:700;font-style:italic;max-width:470px;margin:48px auto 0}
+.bs-quote:before{content:'“';display:block;font-size:3rem;line-height:1}
+.free-ad{background:#07130f;color:#fff;padding:110px 0;overflow:hidden}
+.free-ad-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.free-ad h2{font-size:clamp(3rem,5vw,5.4rem);line-height:1.04;margin:20px 0}
+.free-ad h2 em{display:block;font-style:normal;color:#d7ff28;font-weight:900;letter-spacing:-.055em}
+.free-ad .free-ad-desc{color:#aebdb4;max-width:530px;font-size:1.05rem}
+.free-ad-checks{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:25px 0 28px}
+.free-ad-checks span{padding:12px;border:1px solid #33463c;border-radius:8px;font-size:.8rem;font-weight:700}
+.free-ad-checks span:before{content:'✓';color:#d7ff28;margin-right:10px}
+.free-ad-actions{display:flex;gap:12px;flex-wrap:wrap}
+.free-ad-preview{position:relative;max-width:550px;margin:auto;width:100%}
+.free-ad-browser{background:#f8f9f4;border-radius:17px;overflow:hidden;box-shadow:0 25px 65px #0008;color:#0b1811}
+.free-ad-browserbar{background:#e6e8e2;color:#6d786e;padding:11px 15px;font-size:.72rem}
+.free-ad-browserbody{display:grid;grid-template-columns:1fr 1fr;min-height:330px;align-items:center}
+.free-ad-browsercopy{padding:26px}
+.free-ad-browsercopy h3{font-size:clamp(1.5rem,2.6vw,2.5rem);line-height:1.1}
+.free-ad-browsercopy p{font-size:.78rem;color:#647269}
+.free-ad-browsercopy span{display:inline-block;background:#07130f;color:white;padding:10px 14px;border-radius:30px;font-size:.72rem;font-weight:800}
+.free-ad-browserbody img{width:100%;height:100%;min-height:330px;object-fit:cover}
+.free-ad-listing{position:absolute;right:-24px;bottom:-26px;background:#fff;color:#17221b;border-radius:12px;padding:17px 22px;box-shadow:0 15px 50px #0005;max-width:280px}
+.free-ad-listing strong{display:block;font-size:.8rem}.free-ad-listing small{color:#68766d;font-size:.7rem}
+.free-ad-listing .listing-label{color:#f45b25;font-size:.65rem;font-weight:900}
+@media(max-width:900px){.bs-grid{grid-template-columns:1fr}.bs-card{min-height:0}.bs-card img{height:220px}.free-ad-grid{grid-template-columns:1fr;gap:55px}}
+@media(max-width:560px){.free-ad{padding:70px 0 100px}.free-ad-checks{grid-template-columns:1fr}.free-ad-listing{right:0}.free-ad-browserbody{min-height:260px}.free-ad-browserbody img{min-height:260px}.free-ad-browsercopy{padding:15px}}
+
     </style>
     <link href="./navigation.css" rel="stylesheet" />
     <link href="footer.css" rel="stylesheet" />
@@ -1956,6 +1995,19 @@
                 <div class="actions"><a class="btn btn-outline" href="features/index.html">Explore all features
                         ↗</a></div>
             </div>
+        </section>
+
+
+        <section class="benefits-showcase" id="booking-benefits" aria-labelledby="benefits-showcase-title">
+          <div class="wrap">
+            <div class="bs-intro"><span class="eyebrow" style="color:#d5fc24">WHAT ARE THE BENEFITS</span><h2 id="benefits-showcase-title">Smarter booking starts here</h2><p>Make every step easier for your customers, from finding you and booking in, to paying, managing their plans and coming back again.</p></div>
+            <div class="bs-grid">
+              <article class="bs-card"><span class="bs-tag">CUSTOMER ACCESS</span><h3>Book where and when they want</h3><p>Give customers a simple, always-on way to find you, view availability, book, pay and manage their plans — through a website and app built around your business.</p><a href="features/bookings.html" aria-label="Explore bookings">↗</a><img src="images/fitness.jpg" alt="Fitness class available to book" loading="lazy"></article>
+              <article class="bs-card"><span class="bs-tag">PAYMENTS</span><h3>Payments that happen in real time</h3><p>Take payment at the point of booking and manage memberships, packs, vouchers, renewals, receipts and refunds through one connected flow. Customers get a smoother experience. You get clearer revenue visibility, without chasing payments or stitching systems together.</p><a href="features/payments.html" aria-label="Explore payments">↗</a><img src="images/journey-paid.jpg" alt="Business payments and financial management" loading="lazy"></article>
+              <article class="bs-card"><span class="bs-tag">CUSTOMER COMMUNICATION</span><h3>Stay connected between bookings</h3><p>Your website and customer app give people a familiar place to return to, with booking confirmations, reminders, updates, offers and the next reason to book. It is not just a booking link. It is a branded customer experience that keeps your business close.</p><a href="features/messages.html" aria-label="Explore messaging">↗</a><img src="images/journey-grow.jpg" alt="Customer relationships and communication" loading="lazy"></article>
+            </div>
+            <p class="bs-quote">Everything works together, so the business feels easier to run.</p>
+          </div>
         </section>
 
         <section class="section dark" id="apps">
@@ -2095,6 +2147,14 @@
         
         
         
+
+        <section class="free-ad" id="free" aria-labelledby="free-ad-title">
+          <div class="wrap free-ad-grid">
+            <div><span class="eyebrow" style="color:#d7ff28">YOUR BUSINESS STARTS HERE</span><h2 id="free-ad-title">A professional website.<em>COMPLETELY FREE.</em></h2><p class="free-ad-desc">You have a business worth discovering. With CORE Free, create a professional website, showcase your services and share your own bespoke URL. Hosting is included, so there are no monthly website or hosting charges.</p><div class="free-ad-checks"><span>Free website</span><span>Free hosting</span><span>Bespoke URL</span><span>Promote services</span><span>findbookdo.com listing</span><span>Free forever</span></div><div class="free-ad-actions"><a class="btn btn-orange" href="https://core.fibodo.com/">Get Started For Free ↗</a><a class="btn btn-white" href="free/index.html">Discover CORE Free ↗</a></div></div>
+            <div class="free-ad-preview"><div class="free-ad-browser"><div class="free-ad-browserbar">● ● ● &nbsp; core.fibodo.com / your-business</div><div class="free-ad-browserbody"><div class="free-ad-browsercopy"><h3>Make a splash with better lessons.</h3><p>Friendly, confidence-building swim coaching for every age and stage.</p><span>Explore lessons ↗</span></div><img src="images/swim.jpg" alt="Swimming lessons showcased on a sample CORE Free website" loading="lazy"></div></div><div class="free-ad-listing"><span class="listing-label">FINDBOOKDO.COM</span><strong>Blue Lane Swim Coaching</strong><small>Swimming lessons · Brighton · ★ 4.9</small></div></div>
+          </div>
+        </section>
+
         <section class="closing">
             <div class="wrap closing-inner">
                 <div><span class="eyebrow" style="color:#ffe4d8">YOUR NEXT CHAPTER STARTS HERE</span>
@@ -2104,7 +2164,7 @@
         </section>
     </main>
     <footer id="shared-footer"></footer>
-    <script>const steps = [{ k: 'YOUR DIGITAL SHOP WINDOW', t: 'Show people what makes you worth booking.', d: 'Create a professional business profile and customer-friendly pages that bring your brand and services together.', img: 'journey-visible.jpg', link: '#free', label: 'Discover your website ↗' }, { k: 'AVAILABLE AROUND THE CLOCK', t: 'Make it easy for customers to say yes.', d: 'Turn sessions, classes and appointments into bookable services and publish times that work for you.', img: 'journey-booked.jpg', link: '#features', label: 'Explore bookings ↗' }, { k: 'PAYMENTS CONNECTED TO BOOKINGS', t: 'Know what you sold and what you earned.', d: 'Set prices, take payments through the booking journey and keep your financial activity organised.', img: 'journey-paid.jpg', link: '#pricing', label: 'Explore payments ↗' }, { k: 'BUILD RELATIONSHIPS, NOT SPREADSHEETS', t: 'Turn one booking into a business that lasts.', d: 'Keep customer information and activity together, understand your business and give people more reasons to return.', img: 'journey-grow.jpg', link: '#features', label: 'Explore CRM ↗' }]; document.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => { let s = steps[Number(b.dataset.step)]; document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', String(x === b))); document.getElementById('journey-kicker').textContent = s.k; document.getElementById('journey-title').textContent = s.t; document.getElementById('journey-desc').textContent = s.d; document.getElementById('journey-img').src = 'images/' + s.img; document.getElementById('journey-link').href = s.link; document.getElementById('journey-link').textContent = s.label })); if ('IntersectionObserver' in window) { const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) } }), { threshold: .1 }); document.querySelectorAll('.reveal').forEach(el => obs.observe(el)) } else document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    <script>const steps = [{ k: 'YOUR DIGITAL SHOP WINDOW', t: 'Show people what makes you worth booking.', d: 'Create a professional business profile and customer-friendly pages that bring your brand and services together.', img: 'journey-visible.jpg', link: '#free', label: 'Discover your website ↗' }, { k: 'AVAILABLE AROUND THE CLOCK', t: 'Make it easy for customers to say yes.', d: 'Turn sessions, classes and appointments into bookable services and publish times that work for you.', img: 'journey-booked.jpg', link: '#features', label: 'Explore bookings ↗' }, { k: 'PAYMENTS CONNECTED TO BOOKINGS', t: 'Know what you sold and what you earned.', d: 'Set prices, take payments through the booking journey and keep your financial activity organised.', img: 'journey-paid.jpg', link: 'features/payments.html', label: 'Explore payments ↗' }, { k: 'BUILD RELATIONSHIPS, NOT SPREADSHEETS', t: 'Turn one booking into a business that lasts.', d: 'Keep customer information and activity together, understand your business and give people more reasons to return.', img: 'journey-grow.jpg', link: '#features', label: 'Explore CRM ↗' }]; document.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => { let s = steps[Number(b.dataset.step)]; document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', String(x === b))); document.getElementById('journey-kicker').textContent = s.k; document.getElementById('journey-title').textContent = s.t; document.getElementById('journey-desc').textContent = s.d; document.getElementById('journey-img').src = 'images/' + s.img; document.getElementById('journey-link').href = s.link; document.getElementById('journey-link').textContent = s.label })); if ('IntersectionObserver' in window) { const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) } }), { threshold: .1 }); document.querySelectorAll('.reveal').forEach(el => obs.observe(el)) } else document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
     </script>
     <script src="./navigation.js"></script>
     <script>const yearElement = document.getElementById('year'); if (yearElement) yearElement.textContent = new Date().getFullYear();</script>
